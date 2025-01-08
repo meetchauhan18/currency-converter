@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ff15ca950f.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo">
+            <img id="logo" src="./images/exchange-rate.png" alt="Logo">
+        </div>
+        <div class="title">
+            <h2 id="title">Currency Converter</h2>
+            <span id="sub-title">Made with <span class="heart">❤️ </span> by <span class="name"><a
+                        href="https://github.com/meetchauhan18">Meet Chauhan</a></span></span>
+        </div>
+    </header>
+    <main id="main">
+        <form id="form">
+            <div class="amount-container">
+                <p>Enter Amount</p>
+                <input id="input-amount" name="number" type="number" value="0" min="0" max="100000" required>
+            </div>
+            <div class="currency-container">
+                <div class="from-container select-container">
+                    <p>From</p>
+                    <img id="from-flag" src="https://flagsapi.com/US/flat/64.png">
+                    <select name="from-currency" class="select-container" id="from-currency">
+                    </select>
+                </div>
+                <div class="arrow">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                </div>
+                <div class="to-container select-container">
+                    <p>To</p>
+                    <img id="to-flag" src="https://flagsapi.com/IN/flat/64.png">
+                    <select name="to-currency" class="select-container" id="to-currency">
+                    </select>
+                </div>
+            </div>
+            <div class="result-container">
+                <p class="result-msg hide"> Converter Results </p>
+                <button type="submit" id="submit-btn">Get Exchange Rate</button>
+            </div>
+        </form>
+
+    </main>
+    <script src="app.js" type="module"> 
+    </script>
+    <script src="codes.js" type="module"></script>
+</body>
+
+</html>

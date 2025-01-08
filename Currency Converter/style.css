@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Exo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sixtyfour&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'rubik', sans-serif;
+}
+
+/* Header Section */
+
+#header{
+    background-color: #14213D;
+    height: 15vmin;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    gap: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+#logo{
+    display: block;
+    background-color: #e5e5e5;
+    height: 55px;
+    width: 55px;
+}
+
+.title{
+    height: 15vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#title{
+    color: #FCA311;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#sub-title{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.name{
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: 100;
+    
+}
+
+.name a{
+    color: #e5e5e5;
+}
+
+/* Main Section */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 85vmin;
+    width: 100%;
+    background-color: #14213D;
+}
+
+/* Form Section */
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 70vmin;
+    width: 60vmin;
+    border-radius: 35px;
+}
+
+/* Amount Section */
+
+.amount-container{
+    display: flex;
+    width: 85%;
+    height: 15vmin;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 5vmin;
+    justify-content: center;
+    gap: 10px;
+    background-color: #FCA311;
+    border-radius: 30px;
+}
+
+.amount-container p{
+    color: 14213D;
+    font-size: large;
+    font-weight: 600;
+}
+
+.amount-container input{
+    width: 85%;
+    height: 5vmin;
+    border: none;
+    font-size: large;
+    font-weight: 600;
+    color: #fff;
+    border-bottom: 2px solid #e5e5e5;
+    background-color: transparent;
+}
+
+input:invalid {
+    border-bottom: 2px solid red;
+    
+    }
+
+.amount-container input:focus{
+    outline: none;
+}
+
+.amount-container input:hover{
+    width: 85%;
+    border-bottom: 2px solid #e5e5e5;
+    height: 5vmin;
+    font-size: large;
+    font-weight: 600;
+    color: #fff;
+    background-color: transparent;
+}
+
+.amount-container input::placeholder{
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+    color: #14213d;
+}
+
+/* Currency Section */
+
+.currency-container{
+    display: flex;
+    width: 85%;
+    height: 25vmin;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: #FCA311;
+    border-radius: 30px;
+    padding-left: 5vmin;
+    padding-right: 5vmin;
+}
+
+.arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 40px;
+    color: white;
+}
+
+.from-container, .to-container{
+    width: 100%;    
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+
+.to-container{
+    padding-left: 3vmin;
+}
+
+.from-container p, .to-container p{
+    color: 14213D;
+    font-size: large;
+    font-weight: 600;
+    text-align: left;
+}
+
+.from-container select, .to-container select{
+    width: 85%;
+    height: 5vmin;
+    border: none;
+    font-size: large;
+    border-bottom: 2px solid #e5e5e5;
+    font-weight: 600;
+    color: 14213D;
+    background-color: transparent;
+}
+
+.from-container select:focus, .to-container select:focus{
+    outline: none;
+}
+
+option{
+    background-color: #14213D;
+    color: white;
+}
+
+/* Button Section & result msg */
+
+.result-container{
+    display: flex;
+    width: 85%;
+    height: 18vmin;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #FCA311;
+    border-radius: 30px;
+}
+
+.result-msg{
+
+    color: #14213D;
+    font-size: large;
+    font-weight: 600;
+}
+
+#submit-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    height: 6vmin;
+    border-radius: 15px;    
+    border: none;
+    font-size: large;
+    font-weight: 600;
+    color: #fff;
+    background-color: #297373;
+    cursor: pointer;
+}
+
